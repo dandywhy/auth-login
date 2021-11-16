@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  padding: 30px;
+  margin-top: 10em;
+}
+
+.username-input {
+  margin: 2em 0 0 0;
+}
+
+.password-input {
+  margin: 1em 0 2em 0;
+}
+
+#username {
+  width: 20em;
+}
+
+#password {
+  width: 20em;
+}
+
