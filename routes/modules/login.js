@@ -29,9 +29,9 @@ router.post('/login', (req, res) => {
 })
 
 router.get('/loggedIn', auth, (req, res) => {
-  console.log(req.session)
-  console.log('Cookies: ', req.cookies)
-  console.log('req.sessionID: ', req.sessionID)
+  // console.log(req.session)
+  // console.log('Cookies: ', req.cookies)
+  // console.log('req.sessionID: ', req.sessionID)
   return res.render('logged', { data: req.session.user_id })
 })
 

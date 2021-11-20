@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const MONGODB_URI = 'mongodb://localhost/login-system'
+const MONGODB_URI = 'mongodb://localhost/auth-login'
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const db = mongoose.connection
