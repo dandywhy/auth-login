@@ -1,16 +1,18 @@
 <div class="container">
   <h2>Account Login</h3>
-  <form action="/login" method="POST">
-    <div class="username-input">
-      <input type="text" name="email" id="email" placeholder="Email" required>
+  <form class="d-grid" action="/login" method="POST">
+    <div class="username-input form-floating">
+      <input type="text" class="form-control" name="email" id="email" placeholder="Email address" required>
+      <label for="email">Email address</label>
     </div>
-    <div class="password-input">
-      <input type="password" name="password" id="password" minlength="8" placeholder="Password" required>
+    <div class="password-input form-floating">
+      <input type="password" class="form-control" name="password" id="password" minlength="8" placeholder="Password" required>
+      <label for="password">Password</label>
     </div>
+    <button type="submit" class="btn btn-outline-secondary btn-sm mb-4">Login</button>
     {{#if loginError}}
     <p class="text-center text-danger">{{loginError}}</p>
     {{/if}}
-    <button type="submit" class="btn btn-outline-info">Login</button>
   </form> 
 </div>
 

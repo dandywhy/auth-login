@@ -1,11 +1,27 @@
-.container {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  
+}
+
+
+.container {
   padding: 30px;
   margin-top: 10em;
+  max-width: fit-content;
+  height: 430px;
+  background: rgba(217, 233, 218, 0.8);
+}
+
+.container:hover {
+  transition: 0.5s;
+  box-shadow: 0px 15px 10px -15px rgba(57, 90, 60, 0.8);
 }
 
 .username-input {
-  margin: 2em 0 0 0;
+  margin: 3em 0 0 0;
 }
 
 .password-input {
@@ -16,7 +32,9 @@
   width: 20em;
 }
 
-#password {
-  width: 20em;
+
+.loginSuccess {
+  margin: 70px auto;
+  justify-content: center;
 }
 

@@ -1,3 +1,4 @@
+// middleware
 // check req.session.user_id
 function auth(req, res, next) {
   if (req.session.user_id) {
