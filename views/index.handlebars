@@ -1,15 +1,16 @@
 <div class="container">
   <h2>Account Login</h3>
-  <form action="">
+  <form action="/login" method="POST">
     <div class="username-input">
-      <input type="text" name="username" id="username" placeholder="Email" required>
+      <input type="text" name="email" id="email" placeholder="Email" required>
     </div>
     <div class="password-input">
       <input type="password" name="password" id="password" minlength="8" placeholder="Password" required>
     </div>
-      
-    <button type="submit">Login</button>
-  </form>
-
-  
+    {{#if loginError}}
+    <p class="text-center text-danger">{{loginError}}</p>
+    {{/if}}
+    <button type="submit" class="btn btn-outline-info">Login</button>
+  </form> 
 </div>
+
